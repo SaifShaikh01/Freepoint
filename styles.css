@@ -1,118 +1,63 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* General styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f2f5;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
 }
 
 .container {
-    background-color: white;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    width: 90%;
-    max-width: 600px;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-.content {
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Button styles */
+.buttons-section {
+    margin-bottom: 40px;
+}
+
+.custom-btn {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.custom-btn:hover {
+    background-color: #45a049;
+}
+
+/* Link styles */
+.links-section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.links-container {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 10px;
 }
 
-.button-section {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
-}
-
-.custom-button {
-    padding: 0.8rem 1.5rem;
-    background-color: #3498db;
-    color: white;
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background-color 0.3s, transform 0.2s;
-}
-
-.custom-button:hover {
-    background-color: #2980b9;
-    transform: translateY(-2px);
-}
-
-.link-section {
-    min-height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.link-box {
-    text-align: center;
-    padding: 1rem;
-    border-radius: 5px;
-    background-color: #f8f9fa;
-}
-
-.link-box a {
+.custom-link {
+    color: #2196F3;
     text-decoration: none;
-    color: #2980b9;
-    font-weight: bold;
-    font-size: 1.1rem;
+    padding: 5px;
     transition: color 0.3s;
 }
 
-.link-box a:hover {
-    color: #3498db;
-}
-
-.hidden {
-    display: none;
-}
-
-.gprompt-container {
-    text-align: center;
-    margin-top: 1rem;
-}
-
-.gprompt-button {
-    padding: 0.8rem 1.5rem;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background-color 0.3s, transform 0.2s;
-}
-
-.gprompt-button:hover {
-    background-color: #45a049;
-    transform: translateY(-2px);
-}
-
-@media (max-width: 600px) {
-    .container {
-        padding: 1rem;
-        width: 95%;
-    }
-    
-    .button-section {
-        flex-direction: column;
-    }
-    
-    .custom-button {
-        width: 100%;
-    }
+.custom-link:hover {
+    color: #0d47a1;
+    text-decoration: underline;
 }

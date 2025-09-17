@@ -3,50 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Links</title>
+    <title>Buttons and Links</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <div class="content">
-            <div class="button-section">
-                <button class="custom-button" onclick="showLink(1)">Button 1</button>
-                <button class="custom-button" onclick="showLink(2)">Button 2</button>
-                <button class="custom-button" onclick="showLink(3)">Button 3</button>
-                <button class="custom-button" onclick="showLink(4)">Button 4</button>
-                <button class="custom-button" onclick="showLink(5)">Button 5</button>
+        <section class="buttons-section">
+            <h2>Buttons</h2>
+            <!-- <button class="custom-btn">Button 1</button>
+            <button class="custom-btn">Button 2</button>
+            <button class="custom-btn">Button 3</button>
+            <button class="custom-btn">Button 4</button>
+            <button class="custom-btn">Button 5</button> -->
+            <a href="https://aiskillshouse.com/student/qr-mediator.html?uid=3509&promptId=16" class="custom-btn">Button Link</a>
+            <a href="https://aiskillshouse.com/student/qr-mediator.html?uid=3509&promptId=13" class="custom-btn">Button Link</a>
+            <a href="https://aiskillshouse.com/student/qr-mediator.html?uid=3509&promptId=14" class="custom-btn">Button Link</a>
+            <a href="https://aiskillshouse.com/student/qr-mediator.html?uid=3509&promptId=15" class="custom-btn">Button Link</a>
+            <a href="https://aiskillshouse.com/student/qr-mediator.html?uid=3509&promptId=17" class="custom-btn">Button Link</a>
+        </section>
+
+        <!-- <section class="links-section">
+            <h2>Links</h2>
+            <div class="links-container">
+                <a href="#" class="custom-link">Link 1</a>
+                <a href="#" class="custom-link">Link 2</a>
+                <a href="#" class="custom-link">Link 3</a>
+                <a href="#" class="custom-link">Link 4</a>
+                <a href="#" class="custom-link">Link 5</a>
             </div>
-            <div class="link-section">
-                <div id="link1" class="link-box hidden">
-                    <a href="https://aiskillshouse.com/student/qr-mediator?uid=3509&promptId=17" target="_blank">Visit GitHub</a>
-                </div>
-                <div id="link2" class="link-box hidden">
-                    <a href="https://aiskillshouse.com/student/qr-mediator.html?uid=3509&promptId=16" target="_blank">Visit ChatGPT</a>
-                </div>
-                <div id="link3" class="link-box hidden">
-                    <a href="https://aiskillshouse.com/student/qr-mediator.html?uid=3509&promptId=15" target="_blank">Visit Google</a>
-                </div>
-                <div id="link4" class="link-box hidden">
-                    <a href="https://aiskillshouse.com/student/qr-mediator.html?uid=3509&promptId=14" target="_blank">Visit YouTube</a>
-                </div>
-                <div id="link5" class="link-box hidden">
-                    <a href="https://aiskillshouse.com/student/qr-mediator.html?uid=3509&promptId=13" target="_blank">Visit LinkedIn</a>
-                </div>
-            </div>
-            <div class="gprompt-container">
-                <button class="gprompt-button" onclick="window.open('https://gpt-prompt.com', '_blank')">GPT Prompt</button>
-            </div>
-        </div>
+        </section> -->
     </div>
-    <script>
-        function showLink(number) {
-            // Hide all links first
-            document.querySelectorAll('.link-box').forEach(box => {
-                box.classList.add('hidden');
-            });
-            // Show the selected link
-            document.getElementById('link' + number).classList.remove('hidden');
-        }
-    </script>
 </body>
 </html>
